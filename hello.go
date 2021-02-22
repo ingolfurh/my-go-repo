@@ -7,7 +7,7 @@ var z string = "Suh"
 type hotdog string
 
 func main() {
-	fmt.Println(foo())
+	fmt.Println(foo(z))
 	x := 42
 	fmt.Println(x)
 	var y = 47
@@ -17,6 +17,6 @@ func main() {
 	fmt.Printf("%v, %T", b, b)
 }
 
-func foo() string {
-	return `"Shiiiii"` + " Kidney"
+func foo(x string) string {
+	return `"Shiiiii"` + " Kidney" + x
 }
