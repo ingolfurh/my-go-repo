@@ -2,21 +2,18 @@ package main
 
 import "fmt"
 
-var z string = "Suh"
+type pulsa int
 
-type hotdog string
+var x pulsa
+var y int
 
 func main() {
-	fmt.Println(foo(z))
-	x := 42
 	fmt.Println(x)
-	var y = 47
-	fmt.Println(y)
-	fmt.Printf("%T\n", z)
-	var b hotdog = "Suh"
-	fmt.Printf("%v, %T", b, b)
-}
+	fmt.Printf("%T\n", x)
+	x = 4
+	fmt.Println(x)
 
-func foo(x string) string {
-	return `"Shiiiii"` + " Kidney" + x
+	y = int(x)
+	fmt.Println(y)
+	fmt.Printf("%T", y)
 }
